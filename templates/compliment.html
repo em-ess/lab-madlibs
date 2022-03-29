@@ -4,6 +4,15 @@
   <title>A Compliment</title>
 </head>
 <body>
-    Hi {{ person }}! I think you're {{ compliment }}!
+    Hi {{ person }}! I think you're {{ compliment }}!<br><br>
+    <form action="/game">
+      Would you like to play a game?
+      <input type="radio" name="game" value="yes" id="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" name="game" value="no" id="no">
+      <label for="no">No</label>
+      <br>
+      <input type="submit">
+    </form>
 </body>
 </html>
