@@ -62,7 +62,13 @@ def show_madlib_form():
 
 @app.route("/madlib")
 def show_madlib():
-    return render_template("madlib.html")
+
+    person = request.args.get("person-name") #person = person-name value
+    color = request.args.get("color")
+    noun = request.args.get("noun")
+    adjective = request.args.get("adjective")
+
+    return render_template("madlib.html", person1=person, color=color, noun=noun, adjective=adjective)
 
 
 if __name__ == "__main__":
