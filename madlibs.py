@@ -60,6 +60,10 @@ def show_madlib_form():
     elif user_choice == "no":
         return render_template("goodbye.html")
 
+@app.route("/madlib")
+def show_madlib():
+    return render_template("madlib.html")
+
 
 if __name__ == "__main__":
     # Setting debug=True gives us error messages in the browser and also
